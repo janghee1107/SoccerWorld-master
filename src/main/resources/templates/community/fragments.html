@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>N & LW Lawn Care - Landscaping Bootstrap4 HTML5 Responsive Template </title>
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontawesome CSS -->
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <!-- Custom styles for this template -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/main-style.css" rel="stylesheet">
+    <!-- Custom styles for SoccerWorld -->
+    <link href="/static/css/card.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Page Content -->
+<div th:fragment="pagecontent">
+    <div class="breadcrumb-main">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                Categories
+            </li>
+            <li class="breadcrumb-item ">
+                <a href="/community/free_list">자유 게시판</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a href="/community/meme_list">밈밈 게시판</a>
+            </li>
+            <li class="breadcrumb-item ">
+                <a href="/community/debate_list">축구 토론</a>
+            </li>
+            <li class="breadcrumb-item ">
+                <a href="/community/history_list">축구 역사</a>
+            </li>
+            <li class="breadcrumb-item ">
+                <a href="/community/prospect_list">유망주</a>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div th:fragment="blog">
+    <div class="card mb-sm-2">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+					  <button class="btn btn-secondary" type="button">Go!</button>
+					  <a href="/community/create" class="btn btn-secondary" role="button">글쓰기</a>
+					</span>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end mb-3">
+        <button id="sort-recommend" class="btn btn-secondary me-2">추천순</button>&nbsp;
+        <button id="sort-views" class="btn btn-secondary me-2">조회순</button>&nbsp;
+        <button id="sort-latest" class="btn btn-secondary">최신순</button>
+    </div>
+
+    <div class="card mb-1">
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <div class="me-4" style="margin-right: 50px;">
+                    <img class="img-fluid rounded" src="/static/images/blog-img-01.jpg" alt="" style="width: 100%; max-width: 50px;" />
+                </div>
+                <h3 class="card-title" style="font-size: 1rem; margin: 0; flex-grow: 1;">
+                    <a href="/community/detail" style="text-decoration: none; ">이번 시즌 EPL 누가 우승할까</a>
+                </h3>
+                <div class="d-flex ms-auto">
+                    <span class="me-3">추천수: <strong>10</strong></span>&nbsp;&nbsp;&nbsp;
+                    <span class="me-3">조회수: <strong>200</strong></span>&nbsp;&nbsp;&nbsp;
+                    <span>날짜: <strong>2023-09-09</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
